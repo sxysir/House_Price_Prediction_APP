@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<!-- res/values/arrays.xml -->
+<resources>
+    <string-array name="city_options">
+        <item>ktm</item>
+        <item>butwal</item>
+        <!-- Add more city options as needed -->
+    </string-array>
+
+    <string-array name="address_options">
+        <item>bhatbhateni</item>
+        <item>Tilotama</item>
+        <!-- Add more address options as needed -->
+    </string-array>
+
+    <string-array name="area_options">
+        <item>141</item>
+        <item>131</item>
+        <!-- Add more area options as needed -->
+    </string-array>
+
+    <string-array name="floors_options">
+        <item>5</item>
+        <item>10</item>
+        <!-- Add more floors options as needed -->
+    </string-array>
+
+    <string-array name="bedrooms_options">
+        <item>4</item>
+        <item>5</item>
+        <!-- Add more bedrooms options as needed -->
+    </string-array>
+
+    <string-array name="bathrooms_options">
+        <item>2</item>
+        <item>1</item>
+        <!-- Add more bathrooms options as needed -->
+    </string-array>
+
+
+
+        <string-array name="city_array">
+            <item> Kathmandu</item>
+        </string-array>
+
+
+</resources>

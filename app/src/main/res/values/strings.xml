@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">HomeValueXpert</string>
+
+
+    <string name="address_prompt">Select Address</string>
+    <string name="area_prompt">Select Area</string>
+    <string name="floors_prompt">Select No.of floors</string>
+    <string name="bedrooms_prompt">Select No.of bedrooms</string>
+    <string name="bathrooms_prompt">Select No.of bathrooms</string>
+
+
+    <string name="button_predict">Predict</string>
+
+
+    <string name="city_prompt">Select City</string>
+
+
+</resources>

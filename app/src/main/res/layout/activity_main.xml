@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- res/layout/activity_main.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:background="@drawable/hola">
+
+    <!-- Set text color as needed -->
+
+    <ImageView
+        android:id="@+id/introImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/keyboard" />
+
+    <TextView
+        android:id="@+id/tvHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/introImage"
+        android:layout_marginTop="-720dp"
+        android:fontFamily="@font/nosifer"
+        android:text="\n\n🏠\n\nHomeValueXpert\n📊"
+        android:textAlignment="center"
+        android:textColor="#F2F8F7"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHeading"
+        android:layout_marginTop="146dp"
+        android:fontFamily="@font/wallpoet"
+        android:text="Revolution in Nepal🇳🇵..."
+        android:textAlignment="gravity"
+        android:textColor="#F4E6E6"
+        android:textSize="18sp" /> <!-- Set text color as needed -->
+</RelativeLayout>

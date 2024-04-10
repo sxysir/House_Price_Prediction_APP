@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/historyMenuItem"
+        android:title="History⌛"/>
+
+
+
+    <item
+        android:id="@+id/tutorialMenuItem"
+        android:title="Tutorial💡"/>
+
+    <item
+        android:id="@+id/infoMenuItem"
+        android:title="Info"/>
+</menu>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/neon17"
+    tools:context=".DashboardActivity">
+
+    <TextView
+        android:id="@+id/textViewHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="75dp"
+        android:fontFamily="@font/candal"
+        android:text="      Predict House Price🚀"
+        android:textColor="#A3F3F3"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <!-- Add this to your activity_dashboard.xml file -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginBottom="-10dp"
+        android:fontFamily="@font/coiny"
+        android:text="🟢Profile"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/cityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="  City  🏙️"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <!-- City Spinner -->
+    <Spinner
+        android:id="@+id/citySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:entries="@array/city_array"
+        android:prompt="@string/city_prompt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="  Area in Aana  📐 "
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <!-- Area EditText -->
+    <EditText
+        android:id="@+id/areaEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0dp"
+        android:hint=" 1 Aana = 342.25 sq feet or 31.79 sq metres                                                       "
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="  Floors  🧱"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <!-- No. of Floors EditText -->
+    <EditText
+        android:id="@+id/floorsEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/areaEditText"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0dp"
+        android:hint="                                                       "
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="  Bedroom  🛌 "
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <!-- No. of Bedrooms EditText -->
+    <EditText
+        android:id="@+id/bedroomsEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/floorsEditText"
+        android:layout_marginTop="5dp"
+        android:hint="                                                        "
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="  Bathrooms 🚿 "
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <!-- No. of Bathrooms EditText -->
+    <EditText
+        android:id="@+id/bathroomsEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/bedroomsEditText"
+        android:layout_marginTop="5dp"
+        android:inputType="number" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/predictButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bathroomsEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button3"
+        android:fontFamily="@font/ribeye"
+        android:text="📊"
+        android:textColor="#B2E1E1"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="139dp"
+        android:layout_marginBottom="-5dp"
+        android:fontFamily="@font/candal"
+        android:text="PREDICT"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+    <!-- Predicted Result TextView -->
+    <TextView
+        android:id="@+id/predictedResultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/predictButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textColor="#BDEF93"
+        android:textSize="18sp" />
+
+
+
+    <!-- Dropdown Menu Icon -->
+    <ImageButton
+        android:id="@+id/menuIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="-685dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="Open Menu"
+        android:onClick="showPopupMenu"
+        android:src="@drawable/profile" />
+
+
+    <!-- Container for ImageButtons -->
+    <LinearLayout
+        android:id="@+id/dropdownMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- Your existing ImageButtons -->
+        <ImageButton
+            android:id="@+id/infoButton"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-15dp"
+            android:layout_marginTop="-20dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="View Info"
+            android:src="@drawable/info69" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="-5dp"
+            android:fontFamily="casual"
+            android:text="𝗜𝗻𝗳𝗼"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/tutorialButton"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="-65dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="View Tutorial"
+            android:src="@drawable/bulb69" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_marginLeft="285dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="casual"
+            android:text=" 𝗧𝗨𝗧𝗢𝗥𝗜𝗔𝗟 "
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/historyButton"
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="-760dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="View History"
+            android:onClick="navigateToHistory"
+            android:src="@drawable/purano" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="315dp"
+            android:layout_marginBottom="100dp"
+            android:fontFamily="casual"
+            android:text="𝗛𝗶𝘀𝘁𝗼𝗿𝘆"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

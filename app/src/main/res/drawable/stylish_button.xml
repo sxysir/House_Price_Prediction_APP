@@ -1,0 +1,8 @@
+<!-- res/drawable/stylish_button.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="16dp"/>
+    <gradient
+        android:startColor="#3498db"
+        android:endColor="#2980b9"
+        android:angle="90"/>
+</shape>
